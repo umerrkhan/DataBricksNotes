@@ -1,7 +1,10 @@
 # DataBricksNotes
 00 Extract
+
 10 Cleansing
+
 20 Transformation
+
 
 
 ## Employee Data Set
