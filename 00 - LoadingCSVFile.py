@@ -10,6 +10,10 @@ deptSchema = StructType(
     StructField('loc',StringType())
 ])
 
+eptSchema_alternate = 'deptno INTEGER, dname STRING, Location STRING'
+
+df = spark.read.format("csv").schema(deptSchema_alternate).option("sep",",").option("header",True).load("/FileStore/tables/dept.csv")
+
 df = spark.read.format("csv").schema(deptSchema).option("sep",",").option("header",True).load("/FileStore/tables/dept.csv")
 
 display(df)
