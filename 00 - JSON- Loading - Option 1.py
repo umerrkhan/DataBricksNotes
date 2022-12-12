@@ -1,4 +1,6 @@
 from pyspark.sql.types import StructType, StructField, IntegerType, StringType,LongType,ArrayType,DoubleType,DateType,IntegerType,ArrayType
+from pyspark.sql.functions import explode,col
+
 df = spark.read.option("multiline",True).json("/FileStore/tables/orderDetails.json")
 
 df = df.withColumn("orders",explode(col("datasets"))).select("filename", \
