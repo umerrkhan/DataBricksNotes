@@ -3,14 +3,14 @@
 dbutils.fs.mount(
 source = "wasbs://container-source@storageaccountwtc.blob.core.windows.net/",
     mount_point = "/mnt/adls/",    
-    extra_configs = {"fs.azure.account.key.storageaccountwtc.blob.core.windows.net":"ENMVA6hLfXRhiYoKOnb4jyVjvpjpelASpG82zHxOmWTX6vdW0/hQluFELX8sahj+C+mOCCee94jF+AStAZbcZQ=="}
+    extra_configs = {"fs.azure.account.key.storageaccountwtc.blob.core.windows.net":"EStAZbcZ34323t3t3vsdknvjdsbvjh394PP=="}
 )
 # SQL Server connectivity
 jdbcHostname = "sqlserver-ufde.database.windows.net"
 jdbcPort = 1433
 jdbcDatabase = "MyDevDB"
 jdbcUsername = "ufde"
-jdbcPassword = "Test123@"
+jdbcPassword = "PTELrereest"
 jdbcDriver = "com.microsoft.sqlserver.jdbc.SQLServerDriver"
 jdbcUrl = f"jdbc:sqlserver://{jdbcHostname}:{jdbcPort};databaseName={jdbcDatabase};user={jdbcUsername};password={jdbcPassword}"
 
