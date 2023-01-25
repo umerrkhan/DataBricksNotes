@@ -44,3 +44,9 @@ dfMax = dfMax.drop_duplicates()
 
 dfMax.display()
 
+
+windowsSpec = Window.partitionBy("Product_id").orderBy(col("update_ts"))
+dfRank = df.withColumn('rank',F.rank().over(windowsSpec))
+dfRank.display()
+
+
